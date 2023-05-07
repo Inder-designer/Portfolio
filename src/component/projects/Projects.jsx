@@ -33,11 +33,11 @@ const Projects = () => {
                         </div>
                         <div class="page_content px-3 pb-3">
                             <div class="page_title">
-                                <h3>Aurres   Template</h3>
+                                <h3>Aurres Template</h3>
                             </div>
                             <div class="page_links d-flex">
                                 <a href="#">Details</a>
-                                <a href="/BigTech" target="_blank">Live Preview</a>
+                                <a href="https://projects-six-wine.vercel.app/Aurres/index.html" target="_blank">Live Preview</a>
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@ const Projects = () => {
                             </div>
                             <div class="page_links d-flex">
                                 <a href="#">Details</a>
-                                <a href="/BigTech" target="_blank">Live Preview</a>
+                                <a href="https://projects-six-wine.vercel.app/Crypto%20eTrade%20Landing%20Page/index.html" target="_blank">Live Preview</a>
                             </div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@ const Projects = () => {
                             </div>
                             <div class="page_links d-flex">
                                 <a href="#">Details</a>
-                                <a href="/BigTech" target="_blank">Live Preview</a>
+                                <a href="https://projects-six-wine.vercel.app/Pontem/index.html" target="_blank">Live Preview</a>
                             </div>
                         </div>
                     </div>
@@ -110,6 +110,78 @@ const Projects = () => {
                             <div class="page_links d-flex">
                                 <a href="#">Details</a>
                                 <a href="https://passivo.io/" target="_blank">Live Preview</a>
+                            </div>
+                        </div>
+                    </div>
+                </Tilt>
+            </div>
+            <div className="col-4">
+                <Tilt className="tilt">
+                    <div class="pageOuter">
+                        <div class="pagethumb">
+                            <img src="assets/MyCoin-Wallet.png" alt="" class="img-fluid"/>
+                        </div>
+                        <div class="page_content px-3 pb-3">
+                            <div class="page_title">
+                                <h3>Passivo</h3>
+                            </div>
+                            <div class="page_links d-flex">
+                                <a href="#">Details</a>
+                                <a href="https://projects-six-wine.vercel.app/Coin-Wallet/index.html" target="_blank">Live Preview</a>
+                            </div>
+                        </div>
+                    </div>
+                </Tilt>
+            </div>
+            <div className="col-4">
+                <Tilt className="tilt">
+                    <div class="pageOuter">
+                        <div class="pagethumb">
+                            <img src="assets/Gaming.png" alt="" class="img-fluid"/>
+                        </div>
+                        <div class="page_content px-3 pb-3">
+                            <div class="page_title">
+                                <h3>Max Garza</h3>
+                            </div>
+                            <div class="page_links d-flex">
+                                <a href="#">Details</a>
+                                <a href="https://projects-six-wine.vercel.app/Max%20%20Garza/gaming.html" target="_blank">Live Preview</a>
+                            </div>
+                        </div>
+                    </div>
+                </Tilt>
+            </div>
+            <div className="col-4">
+                <Tilt className="tilt">
+                    <div class="pageOuter">
+                        <div class="pagethumb">
+                            <img src="assets/Fintex.png" alt="" class="img-fluid"/>
+                        </div>
+                        <div class="page_content px-3 pb-3">
+                            <div class="page_title">
+                                <h3>Fintex Template</h3>
+                            </div>
+                            <div class="page_links d-flex">
+                                <a href="#">Details</a>
+                                <a href="https://projects-six-wine.vercel.app/fintex-website/index.html" target="_blank">Live Preview</a>
+                            </div>
+                        </div>
+                    </div>
+                </Tilt>
+            </div>
+            <div className="col-4">
+                <Tilt className="tilt">
+                    <div class="pageOuter">
+                        <div class="pagethumb">
+                            <img src="assets/ESG LandingPage.png" alt="" class="img-fluid"/>
+                        </div>
+                        <div class="page_content px-3 pb-3">
+                            <div class="page_title">
+                                <h3>ESG Template</h3>
+                            </div>
+                            <div class="page_links d-flex">
+                                <a href="#">Details</a>
+                                <a href="https://projects-six-wine.vercel.app/ESG%20Landing%20Page/index.html" target="_blank">Live Preview</a>
                             </div>
                         </div>
                     </div>

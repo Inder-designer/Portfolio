@@ -5,6 +5,8 @@ import Tilt from 'react-vanilla-tilt'
 
 const Banner = () => {
 
+
+
     const settings = {
         dots: false,
         infinite: true,
@@ -81,7 +83,7 @@ const Banner = () => {
                             </p>
                             <p className='detail mt-4'><span>Email</span> : bhupinder7814@gmail.com</p>
                             <p className='detail mb-4'><span>Place</span> : Ropar, Punjab, India - 140001</p>
-                            <a href="assets/Ishu Kumar (2).pdf" className='d-inline-block cstmBtn' target="_blank">Resume <i class="fas fa-chevron-right"></i></a>
+                            <a href="assets/Bhupinder Singh.pdf" className='d-inline-block cstmBtn' target="_blank">Resume <i class="fas fa-chevron-right"></i></a>
                         </div>
 
                     </div>
@@ -197,7 +199,7 @@ const Banner = () => {
                                 </div>
                                 <div class="page_content position-absolute">
                                     <div class="page_links">
-                                        <a href="./BigTech" className=''><span>Live <br /> Preview</span></a>
+                                        <a href="./BigTech" target="_blank" className=''><span>Live <br /> Preview</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -209,7 +211,7 @@ const Banner = () => {
                                 </div>
                                 <div class="page_content position-absolute">
                                     <div class="page_links">
-                                        <a href="./BigTech" className=''><span>Live <br /> Preview</span></a>
+                                        <a href="https://projects-six-wine.vercel.app/Aurres/index.html" target="_blank" className=''><span>Live <br /> Preview</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -221,7 +223,7 @@ const Banner = () => {
                                 </div>
                                 <div class="page_content position-absolute">
                                     <div class="page_links">
-                                        <a href="./BigTech" className=''><span>Live <br /> Preview</span></a>
+                                        <a href="https://passivo.io" target="_blank" className=''><span>Live <br /> Preview</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -233,7 +235,7 @@ const Banner = () => {
                                 </div>
                                 <div class="page_content position-absolute">
                                     <div class="page_links">
-                                        <a href="./BigTech" className=''><span>Live <br /> Preview</span></a>
+                                        <a href="https://3deals.ae" target="_blank" className=''><span>Live <br /> Preview</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -245,7 +247,7 @@ const Banner = () => {
                                 </div>
                                 <div class="page_content position-absolute">
                                     <div class="page_links">
-                                        <a href="./BigTech" className=''><span>Live <br /> Preview</span></a>
+                                        <a href="./https://projects-six-wine.vercel.app/Crypto%20eTrade%20Landing%20Page/index.html" target="_blank" className=''><span>Live <br /> Preview</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -257,7 +259,7 @@ const Banner = () => {
                                 </div>
                                 <div class="page_content position-absolute">
                                     <div class="page_links">
-                                        <a href="./BigTech" className=''><span>Live <br /> Preview</span></a>
+                                        <a href="https://projects-six-wine.vercel.app/Max%20%20Garza/gaming.html"  target="_blank" className=''><span>Live <br /> Preview</span></a>
                                     </div>
                                 </div>
                             </div>
