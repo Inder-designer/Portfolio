@@ -24,6 +24,17 @@ a.navbar-brand{
 .header .nav-item{
   padding: 0 25px;
 }
+.nav_btn,.close_btn{
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 22px;
+}
+.close_btn{
+  position: absolute;
+  right: 20px;  
+  top: 28px;
+}
 .header .nav-item .nav-link{
   text-transform: uppercase;
   font-size: 16px;
@@ -32,10 +43,11 @@ a.navbar-brand{
   color: #fff;
   transition: .2s;
   position: relative;
-  padding: 0;
+  padding: 0 !important;
 }
-.header .nav-item .nav-link:hover{
-  color: #7d7d7d;
+.header .nav-item .nav-link:hover,
+.header .nav-link.active{
+  color: #7d7d7d !important;
 }
 .header .nav-item .nav-link::before {
   content: "";
@@ -49,11 +61,16 @@ a.navbar-brand{
   transform: scale(0, 1);
   transition: transform 0.4s cubic-bezier(.74, .72, .27, .24);
 }
-.header .nav-item  .nav-link:hover::before {
+.header .nav-item  .nav-link:hover::before,
+.header .nav-link.active::before {
   transform-origin: left top;
   transform: scale(1, 1);
 }
-
+.header .cstmBtn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5em;
+  transition: 0.3s;
+}
 
 .banner{
   height: 100%;
@@ -121,6 +138,7 @@ a.navbar-brand{
   overflow: hidden;
   opacity: .8;
   width: 340px !important;
+  max-width: 100%;
   /* transition: .3s; */
   box-shadow: 0px 2px 50px #fcd3054a !important;
 }
@@ -493,19 +511,23 @@ h2:after{
   justify-content: center;
   position: fixed;
   right: 50px;
-  bottom: 50px;
+  bottom: 100%;
   background-color: #111;
   color: #e4ba42;
   border: 2px solid #e4ba42;
   z-index: 9999;
   transition: .3s;
+  text-decoration: none;
 }
 .topbutton:hover{
  background-color: #e4ba42;
  color: #222;
  cursor: pointer;
 }
-@media screen and (min-width: 1200px) {
+.topbutton.scrolled{
+  bottom: 50px;
+}
+@media screen and (min-width: 992px) {
   .navbar .nav_btn {
       display: none;
   }
@@ -514,7 +536,19 @@ h2:after{
       display: block !important;
   }
 }
-@media (max-width: 1199.98px) {
+@media screen and (max-width: 1199.98px) {
+  .banner h1 {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+  .header .nav-item {
+    padding: 0 16px;
+  }
+  .header .nav-item .nav-link {
+    font-size: 14px;
+  }
+}
+@media (max-width: 991.98px) {
 
   /* Side Nav */
   .side-menu {
@@ -598,6 +632,104 @@ h2:after{
   }
 
   /* Side Nav */
+
+  .banner h1 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+  .banner .welcome {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .about:before, .projects:after, .contact:after {
+    font-size: 110px;
+    top: 70px;
+    right: -10px;
+  }
+  .about .text {
+    font-size: 16px;
+  }
+  .about{
+    padding: 90px 0px 80px;
+  }
+  .projects {
+    padding: 180px 60px;
+  }
+  .contact {
+    padding: 184px 0px;
+  }
+  .contact-info .info-item a {
+    font-size: 14px;
+  }
+  .contact-info .info-item:hover a {
+    transform: scale(1.2);
+  }
+  .contact-info .info-item h3 {
+    font-size: 18px;
+  }
+  .header .nav-item .nav-link{
+    display: inline-block;
+    width: fit-content;
+  }
+  .header .nav-item {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .about:before, .projects:after, .contact:after {
+    font-size: 90px;
+    top: 70px;
+  }
+  .about .tilt{
+    width: 290px !important;
+  }
+  .about .text,.about .detail{
+    font-size: 14px;
+  }
+  .cstmBtn {
+    padding: 0.5rem 2rem;
+    border-radius: 0.3em;
+  }
+  .skills .lang p {
+    font-size: 14px;
+  }
+  .projects .pagethumb img {
+    min-height: 140px;
+  }
+  .projects .box .page_content .page_links a span {
+    width: 70px;
+    height: 70px;
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .projects {
+    padding: 160px 0px;
+  }
+  .contact-info .info-item i {
+    height: 4rem;
+    width: 4rem;
+    font-size: 1.2rem;
+  }
+  .contact .contact-info .info-item {
+    height: 11rem;
+  }
+  .contact {
+    padding: 164px 0px;
+  }
+  .footer .socialLinks a {
+    margin: 7px;
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .header .cstmBtn {
+    padding: 0.4rem 1rem;
+    font-size: 12px;
+    border-radius: 0.3em;
+  }
 }
 @media screen and (max-width: 575.98px) {
   .slick-next {
@@ -605,5 +737,89 @@ h2:after{
   }
   .slick-prev {
     left: 0px;
+  }
+  .banner h1 {
+    font-size: 28px;
+  }
+  .banner .welcome {
+    font-size: 12px;
+    }
+  .text {
+    font-size: 12px;
+  }
+  .banner .img1{
+    width: 320px;
+  }
+  .about:before, .projects:after, .contact:after {
+    font-size: 70px;
+  }
+  .about .tilt {
+    width: 230px !important;
+  }
+  .skills .lang p {
+    font-size: 12px;
+  }
+  .skills h2, .experience h2 {
+    font-size: 48px;
+  }
+  h2:after {
+    font-size: 30px;
+  }
+  .projects {
+    padding: 140px 60px 60px;
+  }
+  .experience .companyName {
+    font-size: 18px;
+    align-items: center;
+  }
+  .experience .companyName span,.experience .city {
+    font-size: 13px;
+  }
+  .experience ul li {
+    font-size: 12px;
+    padding-left: 20px;
+  }
+  .experience .designation {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .contact {
+    padding: 142px 0px 80px;
+  }
+  .topbutton {
+    width: 40px;
+    height: 40px;
+    right: 20px;
+  }
+  .footer .copy p {
+    padding: 0;
+    font-size: 12px;
+  }
+  .footer .copy{
+    padding: 16px;
+  }
 }
+@media screen and (max-width: 449.98px) {
+  .banner h1 {
+    font-size: 22px;
+  }
+  .about {
+    padding: 130px 0px 80px;
+  }
+  .projects {
+    padding: 128px 20px 60px;
+  }
+  .projects:after{
+    font-size: 56px;
+  }
+  .contact .row .col-8 {
+    flex: 0 0 auto;
+    width: 90%;  
+  }
+  .contact:after {
+    font-size: 50px;
+  }
+  .contact {
+    padding: 122px 0px 80px;
+  }
 }

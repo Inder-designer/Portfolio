@@ -1,11 +1,27 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Slider from "react-slick";
 import Tilt from 'react-vanilla-tilt'
 // import "slick-carousel/slick/slick-theme.css";
 
 const Banner = () => {
+    const ref = useRef();
+    const [isScrolled, setIsScrolled] = useState(false);
 
-
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.pageYOffset > 300) { // Check if the user has scrolled past the element's offset top
+              setIsScrolled(true);
+            } else {
+              setIsScrolled(false);
+            }
+          };
+      
+          window.addEventListener('scroll', handleScroll); // Add a scroll event listener
+      
+          return () => {
+            window.removeEventListener('scroll', handleScroll); // Remove the scroll event listener on component unmount
+          };
+    },[])
 
     const settings = {
         dots: false,
@@ -52,15 +68,15 @@ const Banner = () => {
             <section className='banner' id='home'>
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-7">
+                        <div className="col-lg-7 order-2 order-lg-1 mt-3 mt-lg-0">
                             <p className="welcome">Welcome to my Portfolio</p>
                             <h1>HI, I AM A <span>Web DESIGNER</span> <br /> Bhupinder Singh</h1>
                             <p className="text">
                                 My portfolio as a front-end developer showcases my expertise in designing and building visually appealing, responsive and interactive web applications using front-end technologies such as HTML, CSS, JavaScript, and frameworks like Bootstrap, and Tailwind.
                             </p>
                         </div>
-                        <div className="col-5">
-                            <img src="assets/3657405.png" alt="" className='img-fluid' />
+                        <div className="col-lg-5 order-1 order-lg-2">
+                            <img src="assets/3657405.png" alt="" className='img-fluid img1' width="400px" />
                         </div>
                     </div>
                 </div>
@@ -69,20 +85,20 @@ const Banner = () => {
             <section className="about" id='about'>
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-5">
+                        <div className="col-lg-5">
                             <Tilt options={{ glare: true }} className="tilt" >
                                 <img src="assets/hero.png" alt="" className='img-fluid' />
                             </Tilt>
                         </div>
-                        <div className="col-7">
+                        <div className="col-lg-7 mt-4 mt-lg-0">
                             <p className="text">
                                 I am a dedicated and passionate web designer with a strong commitment to creating visually stunning and user-friendly websites. With 7 months of experience in designing, I have had the privilege of working with diverse clients and honing my skills in various aspects of web design.
                             </p>
                             <p className="text">
                                 I am constantly learning and exploring new technologies and design trends. I am proficient in HTML5, CSS3, JavaScript, and have experience working with frameworks like Bootstrap and Taiwind. Besides, I have basic knowledge of React js and Next js. I also leverage my expertise in Adobe Creative Suite and prototyping tools to bring ideas to life and deliver exceptional results.
                             </p>
-                            <p className='detail mt-4'><span>Email</span> : bhupinder7814@gmail.com</p>
-                            <p className='detail mb-4'><span>Place</span> : Ropar, Punjab, India - 140001</p>
+                            <p className='detail mt-3 mt-md-4'><span>Email</span> : bhupinder7814@gmail.com</p>
+                            <p className='detail mb-3 mb-md-4'><span>Place</span> : Ropar, Punjab, India - 140001</p>
                             <a href="assets/Bhupinder Singh.pdf" className='d-inline-block cstmBtn' target="_blank">Resume <i class="fas fa-chevron-right"></i></a>
                         </div>
 
@@ -93,13 +109,13 @@ const Banner = () => {
             <section className="skills" id='skills'>
                 <div className="container">
                     <div className="row justify-content-center text-center">
-                        <div className="col-8">
+                        <div className="col-md-10 col-lg=8">
                             <h2 className='mb-3'>Skills</h2>
                             <p className="text">I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development, HTML, CSS, JS, building small and medium web apps, custom plugins, features, animations, and coding interactive layouts.</p>
                         </div>
                     </div>
                     <div className="row justify-content-around mt-4 gy-4">
-                        <div className="col-5">
+                        <div className="col-sm-6 col-md-5">
                             <div className="html lang">
                                 <p className='d-flex justify-content-between '>HTML / CSS <span>90%</span></p>
                                 <div class="progress">
@@ -107,7 +123,7 @@ const Banner = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-5">
+                        <div className="col-sm-6 col-md-5">
                             <div className="css lang">
                                 <p className='d-flex justify-content-between '>Bootstrap / Tailwind <span>90%</span></p>
                                 <div class="progress">
@@ -115,7 +131,7 @@ const Banner = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-5">
+                        <div className="col-sm-6 col-md-5">
                             <div className="jquery lang">
                                 <p className='d-flex justify-content-between '>Jquery <span>70%</span></p>
                                 <div class="progress">
@@ -123,7 +139,7 @@ const Banner = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-5">
+                        <div className="col-sm-6 col-md-5">
                             <div className="javascript lang">
                                 <p className='d-flex justify-content-between '>Javascript <span>50%</span></p>
                                 <div class="progress">
@@ -131,7 +147,7 @@ const Banner = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-5">
+                        <div className="col-sm-6 col-md-5">
                             <div className="sass lang">
                                 <p className='d-flex justify-content-between '>Sass <span>75%</span></p>
                                 <div class="progress">
@@ -139,7 +155,7 @@ const Banner = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-5">
+                        <div className="col-sm-6 col-md-5">
                             <div className="react lang">
                                 <p className='d-flex justify-content-between '>React JS <span>50%</span></p>
                                 <div class="progress">
@@ -192,19 +208,19 @@ const Banner = () => {
             <section className="projects" id='projects'>
                 <div className="container">
                     <div className="row gy-4">
-                        <div class="col-4">
+                        <div class="col-sm-6 col-lg-4">
                             <div className="box position-relative">
                                 <div class="pagethumb position-relative">
                                     <img src="assets/bigtech.png" alt="" class="img-fluid" />
                                 </div>
                                 <div class="page_content position-absolute">
                                     <div class="page_links">
-                                        <a href="./BigTech" target="_blank" className=''><span>Live <br /> Preview</span></a>
+                                        <a href="https://aurres.epizy.com/BigTech/" target="_blank" className=''><span>Live <br /> Preview</span></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-6 col-lg-4">
                             <div className="box position-relative">
                                 <div class="pagethumb">
                                     <img src="assets/Aurres.png" alt="" class="img-fluid" />
@@ -216,7 +232,7 @@ const Banner = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-6 col-lg-4">
                             <div className="box position-relative">
                                 <div class="pagethumb">
                                     <img src="assets/passivo.png" alt="" class="img-fluid" />
@@ -228,7 +244,7 @@ const Banner = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-6 col-lg-4">
                             <div className="box position-relative">
                                 <div class="pagethumb">
                                     <img src="assets/3deals.png" alt="" class="img-fluid" />
@@ -240,7 +256,7 @@ const Banner = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-6 col-lg-4">
                             <div className="box position-relative">
                                 <div class="pagethumb">
                                     <img src="assets/crypto eTrade.png" alt="" class="img-fluid" />
@@ -252,7 +268,7 @@ const Banner = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-6 col-lg-4">
                             <div className="box position-relative">
                                 <div class="pagethumb">
                                     <img src="assets/Gaming.png" alt="" class="img-fluid" />
@@ -275,7 +291,7 @@ const Banner = () => {
                 <div className="container">
                     <h2 className='mb-3'>Experience</h2>
                     <div className="row mt-5 justify-content-center">
-                        <div className="col-10">
+                        <div className="col-md-10">
                             <div>
                                 <p className="designation">Web Designer</p>
                                 <h4 className="companyName">Code Brew Labs <span>October 2022 - May 2023</span></h4>
@@ -295,22 +311,22 @@ const Banner = () => {
 
             <section className="contact" id='contact'>
                 <div className="container">
-                    <div className="row contact-info">
-                        <div className="col-4 ">
+                    <div className="row contact-info justify-content-center" >
+                        <div className="col-8 col-sm-6 col-lg-4 ">
                             <div class="info-item">
                                 <i class="fas fa-phone mb-3"></i>
                                 <h3>phone</h3>
                                 <a href='tel:+91796340328'>+91 79863-40328</a>
                             </div>
                         </div>
-                        <div className="col-4 ">
+                        <div className="col-8 col-sm-6 col-lg-4 ">
                             <div class="info-item">
                                 <i class="fas fa-envelope mb-3"></i>
                                 <h3>Email</h3>
                                 <a href='mailto:bhupinder7814@gmail.com'>bhupinder7814@gmail.com</a>
                             </div>
                         </div>
-                        <div className="col-4 ">
+                        <div className="col-8 col-sm-6 col-lg-4 ">
                             <div class="info-item">
                                 <i class="fa-brands fa-linkedin-in mb-3"></i>
                                 <h3>Linkedin</h3>
@@ -320,9 +336,9 @@ const Banner = () => {
                     </div>
                 </div>
             </section>
-            <div className="topbutton">
+            <a href='#home' className={`topbutton ${isScrolled ? 'scrolled' : ''}`} ref={ref}>
                 <i class="fa-solid fa-arrow-up"></i>
-            </div>
+            </a>
         </div>
     )
 }

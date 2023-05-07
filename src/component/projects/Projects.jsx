@@ -6,8 +6,8 @@ const Projects = () => {
   return (
     <div className='page_collection'>
       <div className="container">
-        <div className="row">
-            <div className="col-4">
+        <div className="row gy-4">
+            <div className="col-sm-6 col-lg-4">
                 <Tilt className="tilt">
                     <div class="pageOuter">
                         <div class="pagethumb">
@@ -19,13 +19,13 @@ const Projects = () => {
                             </div>
                             <div class="page_links d-flex">
                                 <a href="#">Details</a>
-                                <a href="/BigTech" target="_blank">Live Preview</a>
+                                <a href="https://aurres.epizy.com/BigTech/" target="_blank">Live Preview</a>
                             </div>
                         </div>
                     </div>
                 </Tilt>
             </div>
-            <div className="col-4">
+            <div className="col-sm-6 col-lg-4">
                 <Tilt className="tilt">
                     <div class="pageOuter">
                         <div class="pagethumb">
@@ -43,7 +43,7 @@ const Projects = () => {
                     </div>
                 </Tilt>
             </div>
-            <div className="col-4">
+            <div className="col-sm-6 col-lg-4">
                 <Tilt className="tilt">
                     <div class="pageOuter">
                         <div class="pagethumb">
@@ -61,7 +61,7 @@ const Projects = () => {
                     </div>
                 </Tilt>
             </div>
-            <div className="col-4">
+            <div className="col-sm-6 col-lg-4">
                 <Tilt className="tilt">
                     <div class="pageOuter">
                         <div class="pagethumb">
@@ -79,7 +79,7 @@ const Projects = () => {
                     </div>
                 </Tilt>
             </div>
-            <div className="col-4">
+            <div className="col-sm-6 col-lg-4">
                 <Tilt className="tilt">
                     <div class="pageOuter">
                         <div class="pagethumb">
@@ -97,7 +97,7 @@ const Projects = () => {
                     </div>
                 </Tilt>
             </div>
-            <div className="col-4">
+            <div className="col-sm-6 col-lg-4">
                 <Tilt className="tilt">
                     <div class="pageOuter">
                         <div class="pagethumb">
@@ -115,7 +115,7 @@ const Projects = () => {
                     </div>
                 </Tilt>
             </div>
-            <div className="col-4">
+            <div className="col-sm-6 col-lg-4">
                 <Tilt className="tilt">
                     <div class="pageOuter">
                         <div class="pagethumb">
@@ -133,7 +133,7 @@ const Projects = () => {
                     </div>
                 </Tilt>
             </div>
-            <div className="col-4">
+            <div className="col-sm-6 col-lg-4">
                 <Tilt className="tilt">
                     <div class="pageOuter">
                         <div class="pagethumb">
@@ -151,7 +151,7 @@ const Projects = () => {
                     </div>
                 </Tilt>
             </div>
-            <div className="col-4">
+            <div className="col-sm-6 col-lg-4">
                 <Tilt className="tilt">
                     <div class="pageOuter">
                         <div class="pagethumb">
@@ -169,7 +169,7 @@ const Projects = () => {
                     </div>
                 </Tilt>
             </div>
-            <div className="col-4">
+            <div className="col-sm-6 col-lg-4">
                 <Tilt className="tilt">
                     <div class="pageOuter">
                         <div class="pagethumb">
