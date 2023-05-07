@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Header = () => {
     
+    const [isScrolled, setIsScrolled] = useState(false);
+    const [activeSection, setActiveSection] = useState('');
     const [activeItem, setActiveItem] = useState('home');
     const [isActive, SetActive] = useState("ture")
     const handleToggle = () =>{
@@ -10,8 +12,48 @@ const Header = () => {
     const handleItemClick = (itemName) => {
         setActiveItem(itemName);
     };
+
+    useEffect(() => {
+        const handleScroll = () => {
+          const sectionElements = document.querySelectorAll('section');
+          const sectionTops = Array.from(sectionElements).map((section) => section.offsetTop);
+          const scrollPosition = window.scrollY + window.innerHeight / 7;
+    
+          let currentActiveSection = '';
+          for (let i = 0; i < sectionTops.length; i++) {
+            if (scrollPosition >= sectionTops[i] && scrollPosition < sectionTops[i] + sectionElements[i].offsetHeight) {
+              currentActiveSection = sectionElements[i].id;
+              break;
+            }
+          }
+    
+          setActiveSection(currentActiveSection);
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+
+      useEffect(() => {
+        const handleScroll = () => {
+            if (window.pageYOffset > 100) { // Check if the user has scrolled past the element's offset top
+              setIsScrolled(true);
+            } else {
+              setIsScrolled(false);
+            }
+          };
+      
+          window.addEventListener('scroll', handleScroll); // Add a scroll event listener
+      
+          return () => {
+            window.removeEventListener('scroll', handleScroll); // Remove the scroll event listener on component unmount
+          };
+    },[])
   return ( 
-    <div className='header position-fixed top-0 w-100'>
+    <div className={`header position-fixed top-0 w-100 ${isScrolled ? 'topFixed' : ''}`}>
       <div className="container">
       <nav className="navbar navbar-expand-md justify-content-between">
                 <a href="/" className="navbar-brand">
@@ -30,27 +72,27 @@ const Header = () => {
                                 </button>
                                 <ul className="navbar-nav  mb-2 mb-lg-0">
                                     <li className="nav-item">
-                                        <a className={`nav-link ${activeItem === 'home' ? 'active' : ''}`} onClick={() => handleItemClick('home')} href="#home">
+                                        <a className={`nav-link ${activeItem && activeSection === 'home' ? 'active' : ''}`} onClick={() => handleItemClick('home')} href="#home">
                                             Home
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className={`nav-link ${activeItem === 'about' ? 'active' : ''}`} onClick={() => handleItemClick('about')} href="#about">
+                                        <a className={`nav-link ${activeItem && activeSection === 'about' ? 'active' : ''}`} onClick={() => handleItemClick('about')} href="#about">
                                             About
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className={`nav-link ${activeItem === 'skills' ? 'active' : ''}`} onClick={() => handleItemClick('skills')} href="#skills">
+                                        <a className={`nav-link ${activeItem && activeSection === 'skills' ? 'active' : ''}`} onClick={() => handleItemClick('skills')} href="#skills">
                                             Skills
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className={`nav-link ${activeItem === 'projects' ? 'active' : ''}`} onClick={() => handleItemClick('projects')} href="#projects">
+                                        <a className={`nav-link ${activeItem && activeSection === 'projects' ? 'active' : ''}`} onClick={() => handleItemClick('projects')} href="#projects">
                                             Projects
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className={`nav-link ${activeItem === 'experience' ? 'active' : ''}`} onClick={() => handleItemClick('experience')} href="#experience">
+                                        <a className={`nav-link ${activeItem && activeSection === 'experience' ? 'active' : ''}`} onClick={() => handleItemClick('experience')} href="#experience">
                                             Experience
                                         </a>
                                     </li>

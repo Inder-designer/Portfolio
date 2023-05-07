@@ -12,6 +12,12 @@ code {
 .header{
   z-index: 999;
   padding: 10px 0;
+  transition: .3s;
+}
+.header.topFixed {
+  backdrop-filter: blur(8px);
+  background-color: #ffffff17;
+  padding: 0;
 }
 a.navbar-brand{
   font-size: 22px;
