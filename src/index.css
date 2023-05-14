@@ -26,6 +26,12 @@ a.navbar-brand{
   padding: 0 2px;
   color: #fff !important;
  border: 1px solid #8d8d8d;
+ transition: 0.3s ease;
+ width: 26px;
+    overflow: hidden;
+}
+a.navbar-brand.hovered{
+  width: 120px;
 }
 .header .nav-item{
   padding: 0 25px;
@@ -803,6 +809,12 @@ h2:after{
   }
   .footer .copy{
     padding: 16px;
+  }
+  a.navbar-brand{
+    font-size: 20px;
+  }
+  a.navbar-brand.hovered{
+    width: 108px;
   }
 }
 @media screen and (max-width: 449.98px) {

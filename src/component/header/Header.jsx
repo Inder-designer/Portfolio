@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 const Header = () => {
     
+    const [isHovered, setIsHovered] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const [activeSection, setActiveSection] = useState('');
     const [activeItem, setActiveItem] = useState('home');
@@ -12,6 +13,16 @@ const Header = () => {
     const handleItemClick = (itemName) => {
         setActiveItem(itemName);
     };
+
+
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+    setIsHovered(false);
+    };
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -56,8 +67,9 @@ const Header = () => {
     <div className={`header position-fixed top-0 w-100 ${isScrolled ? 'topFixed' : ''}`}>
       <div className="container">
       <nav className="navbar navbar-expand-md justify-content-between">
-                <a href="/" className="navbar-brand">
-                    B.
+                <a href="/" className={`navbar-brand ${isHovered ? 'hovered' : ''}`} onMouseEnter={handleMouseEnter}
+                                    onMouseLeave={handleMouseLeave}>
+                                    {isHovered ? 'Bhupinder.' : 'B.'}
                 </a>
                 <div className="d-flex align-items-center">
                     <div className={`side-menu ${isActive ? null : "menu-show"} `}>
