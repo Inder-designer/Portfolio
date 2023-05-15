@@ -14,10 +14,10 @@ const Footer = () => {
                 </p>
             </div>
             <div class="d-flex align-item-center socialLinks justify-content-center">
-                <a href="[your-social-media-link]" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/Inder-designer" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                 <a href="[your-social-media-link]" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-                <a href="[your-social-media-link]" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                <a href="[your-social-media-link]" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/bhupinder__s" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/bhupinder-singh-840456136" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
         <div className='d-sm-flex justify-content-between copy  text-center text-sm-start'>
