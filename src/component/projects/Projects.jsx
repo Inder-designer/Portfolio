@@ -19,7 +19,7 @@ const Projects = () => {
                             </div>
                             <div class="page_links d-flex">
                                 <a href="#">Details</a>
-                                <a href="https://aurres.epizy.com/BigTech/" target="_blank">Live Preview</a>
+                                <a href="https://bhupinder-projects.onrender.com/BigTechNew/" target="_blank">Live Preview</a>
                             </div>
                         </div>
                     </div>
@@ -37,7 +37,7 @@ const Projects = () => {
                             </div>
                             <div class="page_links d-flex">
                                 <a href="#">Details</a>
-                                <a href="https://projects-six-wine.vercel.app/Aurres/index.html" target="_blank">Live Preview</a>
+                                <a href="https://bhupinder-projects.onrender.com/Aurres/" target="_blank">Live Preview</a>
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@ const Projects = () => {
                             </div>
                             <div class="page_links d-flex">
                                 <a href="#">Details</a>
-                                <a href="https://projects-six-wine.vercel.app/Crypto%20eTrade%20Landing%20Page/index.html" target="_blank">Live Preview</a>
+                                <a href="https://bhupinder-projects.onrender.com/Crypto%20eTrade%20Landing%20Page/" target="_blank">Live Preview</a>
                             </div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@ const Projects = () => {
                             </div>
                             <div class="page_links d-flex">
                                 <a href="#">Details</a>
-                                <a href="https://projects-six-wine.vercel.app/Pontem/index.html" target="_blank">Live Preview</a>
+                                <a href="https://bhupinder-projects.onrender.com/Pontem/" target="_blank">Live Preview</a>
                             </div>
                         </div>
                     </div>
@@ -123,11 +123,11 @@ const Projects = () => {
                         </div>
                         <div class="page_content px-3 pb-3">
                             <div class="page_title">
-                                <h3>Passivo</h3>
+                                <h3>MyCoin Wallet Template</h3>
                             </div>
                             <div class="page_links d-flex">
                                 <a href="#">Details</a>
-                                <a href="https://projects-six-wine.vercel.app/Coin-Wallet/index.html" target="_blank">Live Preview</a>
+                                <a href="https://bhupinder-projects.onrender.com/Coin-Wallet/" target="_blank">Live Preview</a>
                             </div>
                         </div>
                     </div>
@@ -145,7 +145,7 @@ const Projects = () => {
                             </div>
                             <div class="page_links d-flex">
                                 <a href="#">Details</a>
-                                <a href="https://projects-six-wine.vercel.app/Max%20%20Garza/gaming.html" target="_blank">Live Preview</a>
+                                <a href="https://bhupinder-projects.onrender.com/Max%20%20Garza/" target="_blank">Live Preview</a>
                             </div>
                         </div>
                     </div>
@@ -163,7 +163,7 @@ const Projects = () => {
                             </div>
                             <div class="page_links d-flex">
                                 <a href="#">Details</a>
-                                <a href="https://projects-six-wine.vercel.app/fintex-website/index.html" target="_blank">Live Preview</a>
+                                <a href="https://bhupinder-projects.onrender.com/fintex-website/" target="_blank">Live Preview</a>
                             </div>
                         </div>
                     </div>
@@ -181,7 +181,7 @@ const Projects = () => {
                             </div>
                             <div class="page_links d-flex">
                                 <a href="#">Details</a>
-                                <a href="https://projects-six-wine.vercel.app/ESG%20Landing%20Page/index.html" target="_blank">Live Preview</a>
+                                <a href="https://bhupinder-projects.onrender.com/ESG%20Landing%20Page/" target="_blank">Live Preview</a>
                             </div>
                         </div>
                     </div>

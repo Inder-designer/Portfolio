@@ -225,7 +225,7 @@ const Banner = () => {
                                 </div>
                                 <div class="page_content position-absolute">
                                     <div class="page_links">
-                                        <a href="https://aurres.epizy.com/BigTech/" target="_blank" className=''><span>Live <br /> Preview</span></a>
+                                        <a href="https://bhupinder-projects.onrender.com/BigTechNew/" target="_blank" className=''><span>Live <br /> Preview</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -237,7 +237,7 @@ const Banner = () => {
                                 </div>
                                 <div class="page_content position-absolute">
                                     <div class="page_links">
-                                        <a href="https://projects-six-wine.vercel.app/Aurres/index.html" target="_blank" className=''><span>Live <br /> Preview</span></a>
+                                        <a href="https://bhupinder-projects.onrender.com/Aurres/" target="_blank" className=''><span>Live <br /> Preview</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -273,7 +273,7 @@ const Banner = () => {
                                 </div>
                                 <div class="page_content position-absolute">
                                     <div class="page_links">
-                                        <a href="./https://projects-six-wine.vercel.app/Crypto%20eTrade%20Landing%20Page/index.html" target="_blank" className=''><span>Live <br /> Preview</span></a>
+                                        <a href="https://bhupinder-projects.onrender.com/Crypto%20eTrade%20Landing%20Page/" target="_blank" className=''><span>Live <br /> Preview</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -285,7 +285,7 @@ const Banner = () => {
                                 </div>
                                 <div class="page_content position-absolute">
                                     <div class="page_links">
-                                        <a href="https://projects-six-wine.vercel.app/Max%20%20Garza/gaming.html"  target="_blank" className=''><span>Live <br /> Preview</span></a>
+                                        <a href="https://bhupinder-projects.onrender.com/Max%20%20Garza/"  target="_blank" className=''><span>Live <br /> Preview</span></a>
                                     </div>
                                 </div>
                             </div>
