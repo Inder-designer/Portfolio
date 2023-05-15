@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import Tilt from 'react-vanilla-tilt'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Particles from 'react-particles-js';
 // import "slick-carousel/slick/slick-theme.css";
 
 const Banner = () => {
@@ -73,18 +72,6 @@ const Banner = () => {
     return (
         <div className="main">
             <section className='banner' id='home'>
-            <Particles 
-                params={{
-                    particles: {
-                        shape: {
-                            type: 'images',
-                            image: [
-                                {src: 'path/to/first/image.svg', height: 20, width: 20},
-                                {src: 'path/to/second/image.jpg', height: 20, width: 20},
-                            ]
-                        }
-                    }
-                }} />
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-7 order-2 order-lg-1 mt-3 mt-lg-0">
