@@ -626,10 +626,75 @@ const Banner = () => {
             Experience
           </h2>
           <div className="row mt-5 justify-content-center">
-            <div className="col-md-10">
+            <div className="col-md-10 mb-4">
               <div>
                 <p
-                  className="designation"
+                  className="designation mb-2"
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-delay="400"
+                >
+                  Intern
+                </p>
+                <h4
+                  className="companyName"
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-delay="500"
+                >
+                  Infowiz Solution <span>March 2021 - October 2021</span>
+                </h4>
+                <p
+                  className="city"
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-delay="600"
+                >
+                  Chandigarh
+                </p>
+                <ul className="list-unstyled ps-4">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    data-aos-delay="400"
+                  >
+                    Assisted in the development of web applications using HTML, CSS, and JavaScript.
+                  </li>
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    data-aos-delay="500"
+                  >
+                    Learned and implemented basic front-end frameworks and libraries.
+                  </li>
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    data-aos-delay="600"
+                  >
+                    Participated in team meetings and contributed to project planning.
+                  </li>
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    data-aos-delay="700"
+                  >
+                    Gained hands-on experience with Git for version control.
+                  </li>
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    data-aos-delay="800"
+                  >
+                    Worked on small projects to develop foundational web development skills.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-md-10 mb-4">
+              <div>
+                <p
+                  className="designation mb-2"
                   data-aos="zoom-in"
                   data-aos-duration="800"
                   data-aos-delay="400"
@@ -642,7 +707,7 @@ const Banner = () => {
                   data-aos-duration="800"
                   data-aos-delay="500"
                 >
-                  Code Brew Labs <span>October 2022 - May 2023</span>
+                  Code Brew Labs <span>Feb 2022 - March 2023</span>
                 </h4>
                 <p
                   className="city"
@@ -693,6 +758,78 @@ const Banner = () => {
                   >
                     Created a landing page and dashboard in React js and Next js
                     using Material UI and Flowbite Frameworks
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-md-10 mb-4">
+              <div>
+                <p
+                  className="designation mb-2"
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-delay="400"
+                >
+                  Web Developer
+                </p>
+                <h4
+                  className="companyName"
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-delay="500"
+                >
+                  Softflix IT Solutions Pvt. Ltd. <span>April 2023 - May 2024</span>
+                </h4>
+                <p
+                  className="city"
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-delay="600"
+                >
+                  Mohali
+                </p>
+                <ul className="list-unstyled ps-4">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    data-aos-delay="400"
+                  >
+                    Client interaction about the project.
+                  </li>
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    data-aos-delay="500"
+                  >
+                    Transformed PSD and Figma designs into responsive web pages using HTML and CSS.
+                  </li>
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    data-aos-delay="600"
+                  >
+                    Focused on mobile-first design to ensure optimal performance on all devices.
+                  </li>
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    data-aos-delay="700"
+                  >
+                    Modifying and making changes according to client's requirements.
+                  </li>
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    data-aos-delay="800"
+                  >
+                    Utilized Git and Bitbucket for version control, facilitating efficient collaboration and code management.
+                  </li>
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    data-aos-delay="800"
+                  >
+                    Developed comprehensive landing pages and dashboards in React.js and Next.js, utilizing Material UI and Flowbite frameworks.
                   </li>
                 </ul>
               </div>
