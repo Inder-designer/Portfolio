@@ -101,24 +101,6 @@ const Projects = () => {
                 <Tilt className="tilt">
                     <div class="pageOuter">
                         <div class="pagethumb">
-                            <img src="assets/passivoLandingPage.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="page_content px-3 pb-3">
-                            <div class="page_title">
-                                <h3>Passivo</h3>
-                            </div>
-                            <div class="page_links d-flex">
-                                <a href="#">Details</a>
-                                <a href="https://passivo.io/" target="_blank">Live Preview</a>
-                            </div>
-                        </div>
-                    </div>
-                </Tilt>
-            </div>
-            <div className="col-sm-6 col-lg-4">
-                <Tilt className="tilt">
-                    <div class="pageOuter">
-                        <div class="pagethumb">
                             <img src="assets/MyCoin-Wallet.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="page_content px-3 pb-3">

@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
+import { Link, useParams } from 'react-router-dom';
 
 const Header = () => {
     
     const [isHovered, setIsHovered] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
-    const [activeSection, setActiveSection] = useState('');
+    const [activeSection, setActiveSection] = useState('home');
     const [activeItem, setActiveItem] = useState('home');
     const [isActive, SetActive] = useState("ture")
     const handleToggle = () =>{
@@ -84,27 +85,27 @@ const Header = () => {
                                 </button>
                                 <ul className="navbar-nav  mb-2 mb-lg-0">
                                     <li className="nav-item">
-                                        <a className={`nav-link ${activeItem && activeSection === 'home' ? 'active' : ''}`} onClick={() => handleItemClick('home')} href="#home">
+                                        <a className={`nav-link ${activeItem && activeSection === 'home' ? 'active' : ''}`} onClick={() => handleItemClick('home')} href="/#home">
                                             Home
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className={`nav-link ${activeItem && activeSection === 'about' ? 'active' : ''}`} onClick={() => handleItemClick('about')} href="#about">
+                                        <a className={`nav-link ${activeItem && activeSection === 'about' ? 'active' : ''}`} onClick={() => handleItemClick('about')} href="/#about">
                                             About
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className={`nav-link ${activeItem && activeSection === 'skills' ? 'active' : ''}`} onClick={() => handleItemClick('skills')} href="#skills">
+                                        <a className={`nav-link ${activeItem && activeSection === 'skills' ? 'active' : ''}`} onClick={() => handleItemClick('skills')} href="/#skills">
                                             Skills
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className={`nav-link ${activeItem && activeSection === 'projects' ? 'active' : ''}`} onClick={() => handleItemClick('projects')} href="#projects">
+                                        <a className={`nav-link ${activeItem && activeSection === 'projects' ? 'active' : ''}`} onClick={() => handleItemClick('projects')} href="/#projects">
                                             Projects
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className={`nav-link ${activeItem && activeSection === 'experience' ? 'active' : ''}`} onClick={() => handleItemClick('experience')} href="#experience">
+                                        <a className={`nav-link ${activeItem && activeSection === 'experience' ? 'active' : ''}`} onClick={() => handleItemClick('experience')} href="/#experience">
                                             Experience
                                         </a>
                                     </li>
