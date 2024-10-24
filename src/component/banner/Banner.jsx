@@ -92,14 +92,14 @@ const Banner = () => {
                 data-aos-delay="500"
               >
                 <span className="d-flex">
-                  HI, I'm a &nbsp;
-                  <Typewriter
+                  HI, I'm a &nbsp;Frontend Developer
+                  {/* <Typewriter
                     options={{
                       strings: ["Frontend Developer"],
                       autoStart: true,
                       loop: true,
                     }}
-                  />
+                  /> */}
                 </span>{" "}
                 Bhupinder Singh
               </h1>
