@@ -48,11 +48,25 @@
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
-    background-color: #7a929e;
+    background-color: #00a3ff;
 }
 .page_collection .page_links a:nth-child(2) {
     background-color: #00a3ff;
     margin-left: 20px;
+}
+
+.lang_Uses{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0 16px;
+}
+.lang_Uses span{
+    font-size: 14px;
+    color: #fff;
+    background: #2e364e;
+    padding: 4px 8px;
+    border-radius: 4px;
 }
 
 @media screen and (max-width:1199.98px) {

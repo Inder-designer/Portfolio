@@ -92,15 +92,16 @@ const Banner = () => {
                 data-aos-delay="500"
               >
                 <span className="d-flex">
-                HI, I'm a {" "} &nbsp;
+                  HI, I'm a &nbsp;
                   <Typewriter
                     options={{
-                      strings: ["Web Designer", "Web Developer"],
+                      strings: ["Frontend Developer"],
                       autoStart: true,
                       loop: true,
                     }}
                   />
-                </span>{" "} Bhupinder Singh
+                </span>{" "}
+                Bhupinder Singh
               </h1>
 
               <p
@@ -109,11 +110,10 @@ const Banner = () => {
                 data-aos-duration="800"
                 data-aos-delay="700"
               >
-                My portfolio as a front-end developer showcases my expertise in
-                designing and building visually appealing, responsive and
-                interactive web applications using front-end technologies such
-                as HTML, CSS, JavaScript, and frameworks like Bootstrap, and
-                Tailwind.
+                My portfolio showcases my expertise as a React.js developer,
+                along with strong skills in HTML, CSS, and building visually
+                appealing, responsive, and interactive web applications using
+                frameworks like Bootstrap and Tailwind.
               </p>
             </div>
             <div className="col-lg-5 order-1 order-lg-2">
@@ -153,9 +153,9 @@ const Banner = () => {
               >
                 I am a dedicated and passionate web designer with a strong
                 commitment to creating visually stunning and user-friendly
-                websites. With 2.5 Years of experience in designing and
-                developing , I have had the privilege of working with diverse
-                clients and honing my skills in various aspects of web design.
+                websites. With 2 years of experience in React JS and web design,
+                I have had the privilege of working with diverse clients, honing
+                my skills across various aspects of web design.
               </p>
               <p
                 className="text"
@@ -165,11 +165,11 @@ const Banner = () => {
               >
                 I am constantly learning and exploring new technologies and
                 design trends. I am proficient in HTML5, CSS3, JavaScript, and
-                have experience working with frameworks like Bootstrap and
-                Taiwind. Besides, I have basic knowledge of React js and Next
-                js. I also leverage my expertise in Adobe Creative Suite and
-                prototyping tools to bring ideas to life and deliver exceptional
-                results.
+                have experience with frameworks like React Js, Bootstrap,
+                Tailwind, Material UI. Additionally, I have knowledge of
+                MongoDB, Next.js, Git and Bitbucket , and leverage my expertise
+                in converting Figma and PSD designs to HTML CSS, and prototyping
+                tools to bring ideas to life and deliver exceptional results.
               </p>
               <p
                 className="detail mt-3 mt-md-4"
@@ -193,13 +193,13 @@ const Banner = () => {
                 data-aos-delay="1100"
                 style={{ width: "fit-content" }}
               >
-                <a
+                {/* <a
                   href="assets/Bhupinder Singh.pdf"
                   className="d-inline-block cstmBtn"
                   target="_blank"
                 >
                   Resume <i class="fas fa-chevron-right"></i>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -218,7 +218,7 @@ const Banner = () => {
               >
                 Skills
               </h2>
-              <p
+              {/* <p
                 className="text"
                 data-aos="zoom-in-down"
                 data-aos-duration="800"
@@ -229,7 +229,7 @@ const Banner = () => {
                 expertise is front-end development, HTML, CSS, JS, building
                 small and medium web apps, custom plugins, features, animations,
                 and coding interactive layouts.
-              </p>
+              </p> */}
             </div>
           </div>
           <div className="row justify-content-around mt-4 gy-4">
@@ -241,14 +241,14 @@ const Banner = () => {
             >
               <div className="html lang">
                 <p className="d-flex justify-content-between ">
-                  HTML / CSS <span>90%</span>
+                  HTML / CSS <span>98%</span>
                 </p>
                 <div class="progress">
                   <div
                     class="progress-bar "
                     role="progressbar"
                     aria-label="Basic example"
-                    aria-valuenow="75"
+                    aria-valuenow="98"
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
@@ -263,14 +263,14 @@ const Banner = () => {
             >
               <div className="css lang">
                 <p className="d-flex justify-content-between ">
-                  Bootstrap / Tailwind <span>90%</span>
+                  Bootstrap / Tailwind <span>98%</span>
                 </p>
                 <div class="progress">
                   <div
                     class="progress-bar "
                     role="progressbar"
                     aria-label="Basic example"
-                    aria-valuenow="75"
+                    aria-valuenow="98"
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
@@ -285,14 +285,14 @@ const Banner = () => {
             >
               <div className="jquery lang">
                 <p className="d-flex justify-content-between ">
-                  Jquery <span>70%</span>
+                  Jquery <span>90%</span>
                 </p>
                 <div class="progress">
                   <div
                     class="progress-bar "
                     role="progressbar"
                     aria-label="Basic example"
-                    aria-valuenow="75"
+                    aria-valuenow="100"
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
@@ -307,7 +307,7 @@ const Banner = () => {
             >
               <div className="javascript lang">
                 <p className="d-flex justify-content-between ">
-                  Javascript <span>50%</span>
+                  Javascript <span>70%</span>
                 </p>
                 <div class="progress">
                   <div
@@ -329,7 +329,7 @@ const Banner = () => {
             >
               <div className="sass lang">
                 <p className="d-flex justify-content-between ">
-                  Sass <span>75%</span>
+                  Sass <span>90%</span>
                 </p>
                 <div class="progress">
                   <div
@@ -351,7 +351,7 @@ const Banner = () => {
             >
               <div className="react lang">
                 <p className="d-flex justify-content-between ">
-                  React JS <span>50%</span>
+                  React JS <span>90%</span>
                 </p>
                 <div class="progress">
                   <div
@@ -513,11 +513,15 @@ const Banner = () => {
             >
               <div className="box position-relative">
                 <div class="pagethumb">
-                  <img src="assets/passivo.png" alt="" class="img-fluid" />
+                  <img src="assets/Real-State.png" alt="" class="img-fluid" width="100%" />
                 </div>
                 <div class="page_content position-absolute">
                   <div class="page_links">
-                    <a href="https://passivo.io" target="_blank" className="">
+                    <a
+                      href="https://real-estate-front-end-lemon.vercel.app/"
+                      target="_blank"
+                      className=""
+                    >
                       <span>
                         Live <br /> Preview
                       </span>
@@ -658,21 +662,16 @@ const Banner = () => {
                     data-aos-duration="800"
                     data-aos-delay="400"
                   >
-                    Assisted in the development of web applications using HTML, CSS, and JavaScript.
+                    Assisted in the development of web applications using HTML,
+                    CSS, and JavaScript.
                   </li>
                   <li
                     data-aos="fade-up"
                     data-aos-duration="800"
                     data-aos-delay="500"
                   >
-                    Learned and implemented basic front-end frameworks and libraries.
-                  </li>
-                  <li
-                    data-aos="fade-up"
-                    data-aos-duration="800"
-                    data-aos-delay="600"
-                  >
-                    Participated in team meetings and contributed to project planning.
+                    Learned and implemented basic front-end frameworks and
+                    libraries.
                   </li>
                   <li
                     data-aos="fade-up"
@@ -686,7 +685,8 @@ const Banner = () => {
                     data-aos-duration="800"
                     data-aos-delay="800"
                   >
-                    Worked on small projects to develop foundational web development skills.
+                    Worked on small projects to develop foundational web
+                    development skills.
                   </li>
                 </ul>
               </div>
@@ -699,7 +699,7 @@ const Banner = () => {
                   data-aos-duration="800"
                   data-aos-delay="400"
                 >
-                  Web Designer
+                  Web Designer & React Js Developer
                 </p>
                 <h4
                   className="companyName"
@@ -707,7 +707,7 @@ const Banner = () => {
                   data-aos-duration="800"
                   data-aos-delay="500"
                 >
-                  Code Brew Labs <span>Feb 2022 - March 2023</span>
+                  Code Brew Labs <span>October 2022 - March 2023</span>
                 </h4>
                 <p
                   className="city"
@@ -741,7 +741,16 @@ const Banner = () => {
                     data-aos-duration="800"
                     data-aos-delay="600"
                   >
-                    Convert PSD, Figma to HTML, CSS.
+                    Convert PSD, Figma to HTML, CSS, JSX.
+                  </li>
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    data-aos-delay="600"
+                  >
+                    Integrated REST APIs into React.js applications, ensuring
+                    efficient data flow and seamless communication between
+                    frontend and backend services.
                   </li>
                   <li
                     data-aos="fade-up"
@@ -770,7 +779,7 @@ const Banner = () => {
                   data-aos-duration="800"
                   data-aos-delay="400"
                 >
-                  Web Developer
+                  React Js Developer
                 </p>
                 <h4
                   className="companyName"
@@ -778,7 +787,8 @@ const Banner = () => {
                   data-aos-duration="800"
                   data-aos-delay="500"
                 >
-                  Softflix IT Solutions Pvt. Ltd. <span>April 2023 - May 2024</span>
+                  Softflix IT Solutions Pvt. Ltd.{" "}
+                  <span>May 2023 - September 2024</span>
                 </h4>
                 <p
                   className="city"
@@ -794,42 +804,50 @@ const Banner = () => {
                     data-aos-duration="800"
                     data-aos-delay="400"
                   >
-                    Client interaction about the project.
+                    Collaborated with clients to gather requirements and deliver
+                    projects using React.js.
                   </li>
                   <li
                     data-aos="fade-up"
                     data-aos-duration="800"
                     data-aos-delay="500"
                   >
-                    Transformed PSD and Figma designs into responsive web pages using HTML and CSS.
+                    Integrated REST APIs into React.js applications, ensuring
+                    efficient data flow and seamless communication between
+                    frontend and backend services.
+                  </li>
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    data-aos-delay="800"
+                  >
+                    Implemented and maintained reusable components, improving
+                    code efficiency and consistency.
                   </li>
                   <li
                     data-aos="fade-up"
                     data-aos-duration="800"
                     data-aos-delay="600"
                   >
-                    Focused on mobile-first design to ensure optimal performance on all devices.
+                    Collaborated closely with backend teams to ensure smooth API
+                    integration and consistent data fetching.
                   </li>
                   <li
                     data-aos="fade-up"
                     data-aos-duration="800"
                     data-aos-delay="700"
                   >
-                    Modifying and making changes according to client's requirements.
+                    Developed dynamic user interfaces and interactive dashboards
+                    using React.js and Next.js, integrating Material UI and
+                    Flowbite for seamless UI components.
                   </li>
                   <li
                     data-aos="fade-up"
                     data-aos-duration="800"
                     data-aos-delay="800"
                   >
-                    Utilized Git and Bitbucket for version control, facilitating efficient collaboration and code management.
-                  </li>
-                  <li
-                    data-aos="fade-up"
-                    data-aos-duration="800"
-                    data-aos-delay="800"
-                  >
-                    Developed comprehensive landing pages and dashboards in React.js and Next.js, utilizing Material UI and Flowbite frameworks.
+                    Followed best practices for web development, ensuring
+                    high-quality, maintainable, and scalable code.
                   </li>
                 </ul>
               </div>

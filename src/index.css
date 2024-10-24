@@ -231,27 +231,27 @@ h2:after{
   border-radius: 0;
 }
 .skills .html .progress-bar{
-  width: 90%;
+  width: 98%;
   background-color: #ff5722;
 }
 .skills .css .progress-bar{
-  width: 90%;
+  width: 98%;
   background-color: #2196f3;
 }
 .skills .jquery .progress-bar{
-  width: 70%;
+  width: 90%;
   background-color: #4200f0;
 }
 .skills .javascript .progress-bar{
-  width: 50%;
+  width: 70%;
   background-color: #e4ba42;
 }
 .skills .sass .progress-bar{
-  width: 75%;
+  width: 90%;
   background-color: #cf649a;
 }
 .skills .react .progress-bar{
-  width: 50%;
+  width: 90%;
   background-color: #53c1de;
 }
 .skills .slider_item p{
